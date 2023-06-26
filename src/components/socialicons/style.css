@@ -91,6 +91,10 @@
     }
 }
 
+.stick_follow_icon .follow_sns {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
 @media (max-width:991.98px) {
     .stick_follow_icon .follow_sns {
         font-size: small;

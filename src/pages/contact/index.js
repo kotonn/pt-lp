@@ -61,13 +61,13 @@ export const ContactUs = () => {
             <h3 className="color_sec py-4 contact_style">お問い合わせ先</h3>
             <address>
               <strong className="contact_style">メールアドレス:</strong>{" "}
-              <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
+              <a href={`mailto:${contactConfig.YOUR_EMAIL}`} className="contact_style">
                 {contactConfig.YOUR_EMAIL}
               </a>
               <br />
               <br />
             </address>
-            <p>{contactConfig.description}</p>
+            <p className="contact_style">{contactConfig.description}</p>
           </Col>
           <Col lg="7" className="d-flex align-items-center">
             <form onSubmit={handleSubmit(onSubmit)} className="contact__form w-100">

@@ -24,9 +24,9 @@ export const Usage = () => {
             return (
               <div key={i} className="po_item">
                 <img src={data.img} alt="" />
-                <div className="content po_item_style">
-                  <h4>{data.title}</h4>
-                  <p>{data.description}</p>
+                <div className="content">
+                  <h4 className="po_item_style">{data.title}</h4>
+                  <p className="po_item_style">{data.description}</p>
                 </div>
               </div>
             );
