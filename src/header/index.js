@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
-import { logotext, socialprofils } from "../content_option";
+import { logotext } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
 const Headermain = () => {
@@ -38,7 +38,7 @@ const Headermain = () => {
                     <Link onClick={handleToggle} to="/">ホーム</Link>
                   </li>
                   <li className="menu_item">
-                    <Link onClick={handleToggle} to="/portfolio">使い方</Link>
+                    <Link onClick={handleToggle} to="/usage">使い方</Link>
                   </li>
                   {/* <li className="menu_item">
                     <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
