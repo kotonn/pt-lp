@@ -21,16 +21,19 @@
 
 .stick_follow_icon p {
     top: 70px;
-    left: -24px;
-    width: 68px;
+    left: -9px;
+    width: 40px;
     height: 20px;
     color: var(--text-color);
     font-size: 12px;
     font-weight: 600;
     line-height: 1.2;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    transform: rotate( -90deg);
+    transform: rotate(-90deg);
 }
 
 .stick_follow_icon ul li {
@@ -64,6 +67,7 @@
         padding: 40px 0;
         align-items: center;
     }
+
     .stick_follow_icon p {
         top: unset;
         left: unset;
@@ -75,12 +79,20 @@
         font-size: 17px;
         margin-right: 65px;
     }
+
     .stick_follow_icon ul {
         margin-bottom: 20px;
     }
+
     .stick_follow_icon ul li {
         display: inline;
         margin-bottom: 29px;
         margin-right: 10px;
+    }
+}
+
+@media (max-width:991.98px) {
+    .stick_follow_icon .follow_sns {
+        font-size: small;
     }
 }

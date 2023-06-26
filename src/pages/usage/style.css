@@ -1,24 +1,41 @@
 .po_items_ho {
-    column-width: 15em;
-    -moz-column-width: 15em;
-    -webkit-column-width: 15em;
-    column-gap: 4rem;
-    -moz-column-gap: 4rem;
-    -webkit-column-gap: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
 }
 
-.po_item {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    margin: 0.5rem auto;
-    position: relative;
-    background: var(--secondary-color);
-    padding: 6px;
-    border: 1px solid var(--secondary-color);
-    transition: 0.3s ease;
-    font-size: 0;
-    min-height: 300px;
+@media (max-width: 768px) {
+    .po_item {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin: 1rem auto;
+        margin-right: auto;
+        position: relative;
+        background: var(--secondary-color);
+        padding: 6px;
+        border: 1px solid var(--secondary-color);
+        transition: 0.3s ease;
+        font-size: 0;
+        min-height: 300px;
+    }
+}
+
+@media (min-width: 768px) {
+    .po_item {
+        display: inline-block;
+        width: 30%;
+        text-align: center;
+        margin: 1rem;
+        margin-right: auto;
+        position: relative;
+        background: var(--secondary-color);
+        padding: 6px;
+        border: 1px solid var(--secondary-color);
+        transition: 0.3s ease;
+        font-size: 0;
+        min-height: 300px;
+    }
 }
 
 .po_item img {
@@ -77,4 +94,14 @@
 
 .po_item .content a:hover {
     text-decoration: none;
+}
+
+.usage_title {
+    font-family: 'Zen Kaku Gothic Antique';
+    font-weight: 400;
+}
+
+.po_item_style {
+    font-family: 'Zen Kaku Gothic Antique';
+    font-weight: 400;
 }

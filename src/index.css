@@ -1,11 +1,12 @@
 :root {
     --bg-color: #0c0c0c;
+    --bg-secondary-color: #ffb800;
     --primary-color: #0d0d0d;
     --secondary-color: #fff;
     --text-color: #fff;
     --text-color-2: #fff;
     --text-color-3: rgb(204, 0, 0);
-    --overlay-color: rgb(12 12 12 / 63%);
+    --overlay-color: rgb(12 12 12 / 80%);
 }
 
 [data-theme="light"] {
