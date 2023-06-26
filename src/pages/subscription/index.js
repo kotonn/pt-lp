@@ -79,7 +79,7 @@ export const Subscription = () => {
                 <Row className="sec_sp">
                     <Col lg="5" className="mb-5">
                         <h3 className="color_sec py-4 contact_style">登録</h3>
-                        <p>アプリがリリーズされ次第、順次ご案内のメールをお送りさせて頂きます。</p>
+                        <p>アプリがリリースされ次第、順次ご案内のメールをお送りさせて頂きます。</p>
                     </Col>
                     <Col lg="7" className="d-flex align-items-center">
                         <form onSubmit={handleSubmit(onSubmit)} className="contact__form w-100">
