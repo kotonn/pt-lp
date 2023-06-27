@@ -101,7 +101,15 @@
     font-weight: 400;
 }
 
-.po_item_style {
+.po_item_style-title {
+    font-family: 'Zen Kaku Gothic Antique';
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.po_item_style-description {
     font-family: 'Zen Kaku Gothic Antique';
     font-weight: 400;
+    font-size: 1rem;
+    padding: 0 0.5rem;
 }
