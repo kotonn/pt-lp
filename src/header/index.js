@@ -40,9 +40,9 @@ const Headermain = () => {
                   <li className="menu_item">
                     <Link onClick={handleToggle} to="/usage">使い方</Link>
                   </li>
-                  {/* <li className="menu_item">
-                    <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
-                  </li> */}
+                  <li className="menu_item">
+                    <Link onClick={handleToggle} to="/subscription">事前登録</Link>
+                  </li>
                   <li className="menu_item">
                     <Link onClick={handleToggle} to="/contact">お問い合わせ</Link>
                   </li>

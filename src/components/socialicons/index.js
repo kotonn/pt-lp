@@ -9,7 +9,7 @@ export const Socialicons = (params) => {
   return (
     <div className="stick_follow_icon">
       <ul>
-        {socialprofils.twitter && (
+        {socialprofils.instagram && (
           <li>
             <a href={socialprofils.instagram}>
               <FaInstagram />
