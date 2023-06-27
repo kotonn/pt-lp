@@ -39,7 +39,7 @@ export const Home = () => {
                 </h3>
                 <p className="intro_bg_description">{introdata.background_description}</p>
                 <p className="intro_r_description">{introdata.reason_description}</p>
-
+                <p className="intro_one_description">{introdata.one_description}</p>
                 <div className="intro_btn-container intro_btn-action pb-5">
                   <Link to="/usage" className="text_2">
                     <div id="button_p" className="ac_btn btn ">

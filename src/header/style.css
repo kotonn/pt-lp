@@ -186,7 +186,7 @@
 }
 
 .the_menu .menu_item>a:hover {
-    color: var(--text-color-3);
+    color: var(--bg-secondary-color);
 }
 
 @media (min-width: 768px) {

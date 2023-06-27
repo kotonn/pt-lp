@@ -34,7 +34,7 @@ const Headermain = () => {
             <div className="menu__wrapper menu_wrapper_style">
               <div className=" p-3">
                 <ul className="the_menu">
-                  <li className="menu_item ">
+                  <li className="menu_item">
                     <Link onClick={handleToggle} to="/">ホーム</Link>
                   </li>
                   <li className="menu_item">
