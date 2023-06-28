@@ -72,11 +72,28 @@ export const Subscription = () => {
                 </Helmet>
                 <Row className="mb-5 mt-3 pt-md-3">
                     <Col lg="8">
-                        <h1 className="display-6 mb-4 contact_style">事前登録</h1>
-                        <hr className="t_border my-4 ml-0 text-left" />
+                        <h1
+                            className="display-6 mb-4 contact_style"
+                            data-aos="fade-up"
+                            data-aos-duration="800"
+                            data-aos-delay="800"
+                        >
+                            事前登録
+                        </h1>
+                        <hr
+                            className="t_border my-4 ml-0 text-left"
+                            data-aos="fade-up"
+                            data-aos-duration="800"
+                            data-aos-delay="800"
+                        />
                     </Col>
                 </Row>
-                <Row className="sec_sp">
+                <Row
+                    className="sec_sp"
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    data-aos-delay="800"
+                >
                     <Col lg="5" className="mb-5">
                         <h3 className="color_sec py-4 contact_style">登録</h3>
                         <p>アプリがリリースされ次第、順次ご案内のメールをお送りさせて頂きます。</p>

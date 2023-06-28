@@ -7,7 +7,12 @@ import { socialprofils } from "../../content_option";
 
 export const Socialicons = (params) => {
   return (
-    <div className="stick_follow_icon">
+    <div
+      className="stick_follow_icon"
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-delay="800"
+    >
       <ul>
         {socialprofils.instagram && (
           <li>

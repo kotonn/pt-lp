@@ -18,12 +18,27 @@ export const Home = () => {
           <div
             className="h_bg-image order-1 order-lg-2 h-100 "
             style={{ backgroundImage: `url(${introdata.your_img_url})` }}
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="800"
           ></div>
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center ">
               <div className="intro mx-auto">
-                <h2 className="intro_title">{introdata.title}</h2>
-                <h3 className="intro_subtitle fluidz-48">
+                <h2
+                  className="intro_title"
+                  data-aos="fade-right"
+                  data-aos-duration="800"
+                  data-aos-delay="800"
+                >
+                  {introdata.title}
+                </h2>
+                <h3
+                  className="intro_subtitle fluidz-48"
+                  data-aos="fade-right"
+                  data-aos-duration="800"
+                  data-aos-delay="800"
+                >
                   <Typewriter
                     options={{
                       strings: [
@@ -37,10 +52,36 @@ export const Home = () => {
                     }}
                   />
                 </h3>
-                <p className="intro_bg_description">{introdata.background_description}</p>
-                <p className="intro_r_description">{introdata.reason_description}</p>
-                <p className="intro_one_description">{introdata.one_description}</p>
-                <div className="intro_btn-container intro_btn-action pb-5">
+                <p
+                  className="intro_bg_description"
+                  data-aos="fade-right"
+                  data-aos-duration="800"
+                  data-aos-delay="800"
+                >
+                  {introdata.background_description}
+                </p>
+                <p
+                  className="intro_r_description"
+                  data-aos="fade-right"
+                  data-aos-duration="800"
+                  data-aos-delay="800"
+                >
+                  {introdata.reason_description}
+                </p>
+                <p
+                  className="intro_one_description"
+                  data-aos="fade-right"
+                  data-aos-duration="800"
+                  data-aos-delay="800"
+                >
+                  {introdata.one_description}
+                </p>
+                <div
+                  className="intro_btn-container intro_btn-action pb-5"
+                  data-aos="fade-left"
+                  data-aos-duration="800"
+                  data-aos-delay="800"
+                >
                   <Link to="/usage" className="text_2">
                     <div id="button_p" className="ac_btn btn ">
                       使い方

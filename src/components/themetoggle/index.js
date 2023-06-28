@@ -9,10 +9,15 @@ const Themetoggle = () => {
   };
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme ); 
+    localStorage.setItem('theme', theme);
   }, [theme]);
   return (
-    <div className="nav_ac" onClick={themetoggle}>
+    <div
+      className="nav_ac"
+      onClick={themetoggle}
+      data-aos="fade-up"
+      data-aos-duration="800"
+      data-aos-delay="800">
       <WiMoonAltWaningCrescent4 />
     </div>
   );

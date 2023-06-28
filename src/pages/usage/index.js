@@ -15,14 +15,32 @@ export const Usage = () => {
         </Helmet>
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="8">
-            <h1 className="usage_title display-6 mb-3"> どうやって使うの？ </h1>{" "}
-            <hr className="t_border my-4 ml-0 text-left" />
+            <h1
+              className="usage_title display-6 mb-3"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="800"
+            >
+              どうやって使うの？
+            </h1>{" "}
+            <hr
+              className="t_border my-4 ml-0 text-left"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="800"
+            />
           </Col>
         </Row>
         <div className="mb-5 po_items_ho">
           {dataportfolio.map((data, i) => {
             return (
-              <div key={i} className="po_item">
+              <div
+                key={i}
+                className="po_item"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="800"
+              >
                 <img src={data.img} alt="" />
                 <div className="content">
                   <h4 className="po_item_style-title">{data.title}</h4>

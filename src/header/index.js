@@ -17,15 +17,24 @@ const Headermain = () => {
     <>
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
-          <Link className="navbar-brand nav_ac" to="/">
+          <Link
+            className="navbar-brand nav_ac" to="/" data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="800"
+          >
             {logotext}
           </Link>
           <div className="d-flex align-items-center">
             <Themetoggle />
-            <button className="menu__button  nav_ac" onClick={handleToggle}>
+            <button
+              className="menu__button  nav_ac"
+              onClick={handleToggle}
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="800"
+            >
               {!isActive ? <VscClose /> : <VscGrabber />}
             </button>
-
           </div>
         </div>
 
