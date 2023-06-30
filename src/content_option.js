@@ -68,7 +68,7 @@ const contactConfig = {
 };
 
 const socialprofils = {
-    instagram: "https://www.instagram.com/putone_music/",
+    instagram: "https://instagram.com/putone_official",
 };
 
 export {
