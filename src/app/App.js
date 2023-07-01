@@ -11,7 +11,7 @@ import AnimatedCursor from "../hooks/AnimatedCursor";
 import "./App.css";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import { Puff } from 'react-loader-spinner'
+import { Bars } from 'react-loader-spinner'
 
 function _ScrollToTop(props) {
   const { pathname } = useLocation();
@@ -46,12 +46,11 @@ export default function App() {
   if (loading) {
     return (
       <div className={`loader ${fadeOut ? 'fade-out' : ''}`}>
-        <Puff
+        <Bars
           height="50"
           width="50"
-          radius={1}
           color="#ffb800"
-          ariaLabel="puff-loading"
+          ariaLabel="bars-loading"
           wrapperClass="loader_spinner"
           visible={true}
         />
