@@ -18,7 +18,9 @@ const Headermain = () => {
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
           <Link
-            className="navbar-brand nav_ac" to="/" data-aos="fade-up"
+            className="navbar-brand nav_ac"
+            to="/"
+            data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="800"
           >
@@ -38,7 +40,7 @@ const Headermain = () => {
           </div>
         </div>
 
-        <div className={`site__navigation ${!isActive ? "menu__opend" : ""}`}>
+        <div className={`site__navigation ${!isActive ? "menu__opend" : "menu__closed"}`}>
           <div className="bg__menu h-100">
             <div className="menu__wrapper menu_wrapper_style">
               <div className=" p-3">

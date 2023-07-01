@@ -5,7 +5,7 @@ import { WiMoonAltWaningCrescent4 } from "react-icons/wi";
 const Themetoggle = () => {
   const [theme, settheme] = useState(localStorage.getItem("theme"));
   const themetoggle = () => {
-    settheme(theme === "dark" ? "light" : "dark");
+    settheme(theme === "light" ? "dark" : "light");
   };
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -17,7 +17,8 @@ const Themetoggle = () => {
       onClick={themetoggle}
       data-aos="fade-up"
       data-aos-duration="800"
-      data-aos-delay="800">
+      data-aos-delay="800"
+    >
       <WiMoonAltWaningCrescent4 />
     </div>
   );

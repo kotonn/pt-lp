@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   BrowserRouter as Router,
@@ -11,6 +11,7 @@ import AnimatedCursor from "../hooks/AnimatedCursor";
 import "./App.css";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import { Puff } from 'react-loader-spinner'
 
 function _ScrollToTop(props) {
   const { pathname } = useLocation();
@@ -22,13 +23,41 @@ function _ScrollToTop(props) {
 const ScrollToTop = withRouter(_ScrollToTop);
 
 export default function App() {
+  const [loading, setLoading] = useState(true);
+  const [fadeOut, setFadeOut] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setFadeOut(true);
+      setTimeout(() => {
+        setLoading(false);
+      }, 1000);
+    }, 2000);
+  }, []);
+
   useEffect(() => {
     Aos.init({
       once: true,
       duration: 600,
       easing: 'ease-out-sine',
-    })
-  }, [])
+    });
+  }, []);
+
+  if (loading) {
+    return (
+      <div className={`loader ${fadeOut ? 'fade-out' : ''}`}>
+        <Puff
+          height="50"
+          width="50"
+          radius={1}
+          color="#ffb800"
+          ariaLabel="puff-loading"
+          wrapperClass="loader_spinner"
+          visible={true}
+        />
+      </div>
+    );
+  }
 
   return (
     <Router basename={process.env.PUBLIC_URL}>

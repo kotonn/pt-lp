@@ -6,27 +6,17 @@ import { Usage } from "../pages/usage";
 import { ContactUs } from "../pages/contact";
 import { Subscription } from "../pages/subscription";
 import { Socialicons } from "../components/socialicons";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { TransitionGroup } from "react-transition-group";
 
 const AnimatedRoutes = withRouter(({ location }) => (
   <TransitionGroup>
-    <CSSTransition
-      key={location.key}
-      timeout={{
-        enter: 400,
-        exit: 400,
-      }}
-      classNames="page"
-      unmountOnExit
-    >
-      <Routes location={location}>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/subscription" element={<Subscription />} />
-        <Route path="/usage" element={<Usage />} />
-        <Route path="/contact" element={<ContactUs />} />
-        <Route path="*" element={<Home />} />
-      </Routes>
-    </CSSTransition>
+    <Routes location={location}>
+      <Route exact path="/" element={<Home />} />
+      <Route path="/subscription" element={<Subscription />} />
+      <Route path="/usage" element={<Usage />} />
+      <Route path="/contact" element={<ContactUs />} />
+      <Route path="*" element={<Home />} />
+    </Routes>
   </TransitionGroup>
 ));
 
