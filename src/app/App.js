@@ -12,6 +12,7 @@ import "./App.css";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { Bars } from 'react-loader-spinner'
+import ReactGA from "react-ga4";
 
 function _ScrollToTop(props) {
   const { pathname } = useLocation();
@@ -74,6 +75,21 @@ export default function App() {
         <Headermain />
         <AppRoutes />
       </ScrollToTop>
+      <PageViewTracker />
     </Router>
   );
+}
+
+function PageViewTracker() {
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.initialize('REACT_APP_MEASUREMENT_ID');
+    ReactGA.send({
+      hitType: "pageview",
+      page: location.pathname + location.search,
+    });
+  }, [location]);
+
+  return null;
 }
