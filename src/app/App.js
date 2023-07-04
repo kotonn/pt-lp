@@ -50,7 +50,7 @@ export default function App() {
         <Bars
           height="50"
           width="50"
-          color="#ffb800"
+          color="#ff914d"
           ariaLabel="bars-loading"
           wrapperClass="loader_spinner"
           visible={true}

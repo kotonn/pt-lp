@@ -107,14 +107,14 @@ section {
 @media (max-width: 991.99px) {
     .intro_bg_description {
         font-family: 'Zen Kaku Gothic Antique', sans-serif;
-        margin-top: 3rem;
+        margin-top: 2.5rem;
     }
 }
 
 @media (min-width:991.98px) {
     .intro_bg_description {
         font-family: 'Zen Kaku Gothic Antique', sans-serif;
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
 }
 
@@ -319,8 +319,8 @@ section {
 @media (max-width:991.98px) {
     .type_writer_text {
         font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        font-weight: 400;
         font-size: 1rem;
-        font-weight: 700;
         color: var(--text-color);
         margin-bottom: 1rem;
     }
@@ -329,8 +329,8 @@ section {
 @media (min-width:991.99px) {
     .type_writer_text {
         font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        font-weight: 400;
         font-size: 1.2rem;
-        font-weight: 700;
         color: var(--text-color);
         margin-bottom: 1rem;
     }
