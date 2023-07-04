@@ -1,23 +1,23 @@
 :root {
-    --bg-color: #fef6e4;
+    --bg-color: #fbd3b7;
     --bg-secondary-color: #ffb800;
-    --primary-color: #fef6e4;
+    --primary-color: #fbd3b7;
     --secondary-color: #0c0c0c;
     --text-color: #0c0c0c;
     --text-color-2: #0c0c0c;
     --text-color-3: rgb(204, 0, 0);
-    --overlay-color: rgb(255 255 255 / 90%);
+    --overlay-color: #fbd3b7;
 }
 
 
 [data-theme="dark"] {
-    --bg-color: #0c0c0c;
-    --primary-color: #0c0c0c;
+    --bg-color: #676b80;
+    --primary-color: #676b80;
     --secondary-color: #fff;
     --text-color: #fff;
     --text-color-2: #fff;
     --text-color-3: rgb(204, 0, 0);
-    --overlay-color: rgb(12 12 12 / 90%);
+    --overlay-color: #676b80;
 }
 
 

@@ -31,7 +31,6 @@
     color: var(--text-color-2);
     line-height: 2;
     height: 50px;
-    font-weight: bold;
     z-index: 1000;
 }
 
