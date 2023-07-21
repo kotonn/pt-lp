@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import Typewriter from "typewriter-effect";
 import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
 
@@ -17,12 +16,26 @@ export const Home = () => {
         </Helmet>
         <div className="intro_sec d-block d-lg-flex align-items-center ">
           <div
-            className="h_bg-image order-1 order-lg-2 h-100 "
-            style={{ backgroundImage: `url(${introdata.your_img_url})` }}
+            className="h_bg-image order-1 order-lg-2 h-100"
+            style={{
+              backgroundImage: `url(${introdata.your_img_url})`,
+            }}
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="800"
-          ></div>
+          >
+            <div
+              className="order-1 order-lg-2 h-100 w-100"
+              style={{
+                position: 'absolute',
+                top: 0,
+                backgroundColor: 'rgba(0, 0, 0, 0.1)',
+              }}
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-delay="800"
+            ></div>
+          </div>
           <div className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center">
             <div className="align-self-center ">
               <div className="intro mx-auto">
@@ -40,19 +53,9 @@ export const Home = () => {
                   data-aos-duration="800"
                   data-aos-delay="800"
                 >
-                  <Typewriter
-                    options={{
-                      strings: [
-                        introdata.animated.first,
-                        introdata.animated.second,
-                      ],
-                      autoStart: true,
-                      loop: true,
-                      deleteSpeed: 10,
-                      wrapperClassName: "type_writer_text"
-                    }}
-                  />
+                  音楽を通して身近な人と繋がれる音楽SNS
                 </h3>
+
                 <p
                   className="intro_bg_description"
                   data-aos="fade-right"
@@ -78,7 +81,7 @@ export const Home = () => {
                   {introdata.one_description}
                 </p>
                 <div
-                  className="intro_btn-container intro_btn-action pb-5"
+                  className="intro_btn-container intro_btn-action pb-3"
                   data-aos="fade-left"
                   data-aos-duration="800"
                   data-aos-delay="800"

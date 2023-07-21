@@ -7,6 +7,11 @@
     border: 1px solid var(--secondary-color);
 }
 
+.contact__form .form-control::placeholder {
+    color: var(--text-color);
+    opacity: 1;
+}
+
 .contact__form input.form-control {
     margin-bottom: 2em;
     height: calc(2.5em + .75rem + 2px);
@@ -49,4 +54,12 @@ button.btn.ac_btn:hover {
 
 .contact_style {
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+.subscription_title {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
 }
